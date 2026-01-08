@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>The Royal Panjabi Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <h1>The Royal Panjabi Shop</h1>
+  <p>প্রিমিয়াম কোয়ালিটি | সারা বাংলাদেশ ডেলিভারি</p>
+</header>
+
+<!-- Product Section -->
+<section class="product">
+  <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" alt="Royal Panjabi">
+
+  <div class="details">
+    <h2>Royal Premium Panjabi</h2>
+    <p class="desc">
+      উন্নতমানের কাপড়, আধুনিক ডিজাইন এবং আরামদায়ক ফিটিং।
+      উৎসব, নামাজ ও বিশেষ অনুষ্ঠানের জন্য পারফেক্ট চয়েস।
+    </p>
+
+    <ul>
+      <li>✔ 100% Premium Cotton</li>
+      <li>✔ Export Quality Stitch</li>
+      <li>✔ Long Lasting Color</li>
+      <li>✔ Cash on Delivery</li>
+    </ul>
+
+    <div class="price">
+      <span class="old">৳2499</span>
+      <span class="new">৳1799</span>
+    </div>
+  </div>
+</section>
+
+<!-- Order Form -->
+<section class="order">
+  <h2>অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h2>
+
+  <form>
+    <input type="text" placeholder="আপনার নাম" required>
+    <input type="text" placeholder="মোবাইল নাম্বার" required>
+    <textarea placeholder="ঠিকানা লিখুন" required></textarea>
+
+    <select required>
+      <option value="">পাঞ্জাবির সাইজ সিলেক্ট করুন</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+      <option>XXL</option>
+    </select>
+
+    <button type="submit">অর্ডার কনফার্ম করুন</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 The Royal Panjabi Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
