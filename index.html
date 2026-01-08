@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AG Collection | Luxury Clothing Brand</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#0b0b0b;
+  --dark:#141414;
+  --gold:#c9a44c;
+  --gray:#b5b5b5;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+}
+
+body{
+  background:var(--black);
+  color:white;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 50px;
+}
+
+header h1{
+  color:var(--gold);
+  letter-spacing:3px;
+  font-size:26px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  font-weight:500;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:var(--gold);
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.2)),
+    url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  padding:0 60px;
+}
+
+.hero-box{
+  max-width:600px;
+}
+
+.hero-box h2{
+  font-size:52px;
+  color:var(--gold);
+  margin-bottom:15px;
+}
+
+.hero-box p{
+  color:var(--gray);
+  margin-bottom:30px;
+}
+
+.btn{
+  padding:14px 36px;
+  background:var(--gold);
+  color:black;
+  border:none;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:white;
+}
+
+/* SECTION */
+section{
+  padding:100px 60px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-title h3{
+  font-size:36px;
+  color:var(--gold);
+}
+
+.section-title p{
+  color:var(--gray);
+  margin-top:10px;
+}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+}
+
+.product{
+  background:var(--dark);
+  border-radius:18px;
+  overflow:hidden;
+  transition:.4s;
+}
+
+.product:hover{
+  transform:translateY(-10px);
+}
+
+.product img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+}
+
+.product-info{
+  padding:25px;
+}
+
+.product-info h4{
+  color:var(--gold);
+  margin-bottom:8px;
+}
+
+.product-info span{
+  font-size:14px;
+  color:var(--gray);
+}
+
+/* BRAND STORY */
+.story{
+  background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.story img{
+  width:100%;
+  border-radius:20px;
+}
+
+.story h3{
+  color:var(--gold);
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.story p{
+  color:var(--gray);
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  text-align:center;
+  padding:40px;
+  color:#777;
+  font-size:14px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25d366;
+  color:white;
+  padding:14px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{
+    padding:15px 25px;
+  }
+  nav{
+    display:none;
+  }
+  .hero{
+    padding:0 25px;
+  }
+  .hero-box h2{
+    font-size:38px;
+  }
+  .story{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>AG COLLECTION</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Story</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+    <h2>Luxury Clothing Redefined</h2>
+    <p>AG Collection delivers premium quality fashion designed for confidence, class and comfort.</p>
+    <a href="#shop" class="btn">Explore Collection</a>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="section-title">
+    <h3>Featured Collection</h3>
+    <p>Crafted for modern lifestyle</p>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1520975867597-0f3a6d5a4b2a">
+      <div class="product-info">
+        <h4>Signature T-Shirt</h4>
+        <span>Premium Cotton • Tailored Fit</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+      <div class="product-info">
+        <h4>Luxury Hoodie</h4>
+        <span>Comfort • Street Elegance</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+      <div class="product-info">
+        <h4>Urban Wear</h4>
+        <span>Bold • Minimal • Modern</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f">
+  <div>
+    <h3>Our Brand Story</h3>
+    <p>
+      AG Collection is built on premium craftsmanship, minimalist design and timeless fashion.
+      Every piece reflects confidence, class and modern identity.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 AG Collection • Premium Clothing Brand
+</footer>
+
+<a class="whatsapp" href="https://wa.me/8801717086604" target="_blank">
+  WhatsApp Order
+</a>
+
+<script>
+console.log("AG Collection Professional Website Loaded");
+</script>
+
+</body>
+</html>
